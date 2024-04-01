@@ -1,0 +1,696 @@
+:root{
+    --primary:rgb(11, 102, 106);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.row .inicio-top{
+    position: absolute;
+    /* justify-content: center; */
+    padding-left: 200px;
+    /* padding-bottom: 100px; */
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+}
+
+.linea{
+    position: relative;
+    padding-top: 200px;
+    width: 100%;
+}
+
+.inicio-top h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 60px;
+    font-size: 40px;
+}
+
+.inicio-top hr{
+    color: black;
+}
+
+.inicio-top #perfil1{
+    /* width: 200px; */
+    padding-bottom: 30px;
+    height: 400px;
+    margin-left: 200px;
+}
+
+.ms-auto{
+    padding-right: 10px !important;
+}
+
+.nav-item{
+    padding-right: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black !important;
+}
+
+ .col1 {
+    padding-left: 200px !important;
+    padding-bottom: 20px !important;
+    width: 50%;
+    background: var(--primary);
+}
+.col2{
+    padding-left: 150px !important;
+    padding-bottom: 20px !important;
+    width: 50%;
+    background: var(--primary);
+}
+.col1 h3{
+    font-size: 20px;
+    color: white;
+}
+
+.col1 h2{
+    font-size: 30px;
+    color: white;
+}
+
+.col1 p{
+    font-size: 15px;
+    color: white;
+}
+
+.col2 img{
+    margin-top: 20px;
+    /* margin-left: 10px; */
+}
+
+.col2 img{
+    border-radius: 20px;
+    width: 450px;
+    height: 30vh;
+}
+
+.col-md-12 .text{
+    padding-top: 30px;
+    padding-left: 200px;
+}
+
+/* ------------------------------------ barra de propgres ------------------------------------- */
+
+.all{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+  }
+
+  .circle-wrap .ht{
+    padding-top: 80px;
+  }
+
+  .circle-wrap .ph{
+    padding-top: 80px;
+    padding-left: 50px;
+  }
+
+  .circle-wrap .js{
+    padding-top: 80px;
+    padding-left: 60px;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: var(--primary);
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  .mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: var(--primary);
+  }
+  
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(110deg);
+  }
+  
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(113deg);
+    }
+  }
+  
+  /* 2nd bar */
+  
+  .mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color:var(--primary);
+  }
+  
+  .mask.full-2,
+  .circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(70deg);
+  }
+  
+  @keyframes fill-2{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(70deg);
+    }
+  }
+  
+  /* 3rd progress bar */
+  .mask .fill-3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color:var(--primary);
+  }
+  
+  .mask.full-3,
+  .circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(40deg);
+  }
+  
+  @keyframes fill-3{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(40deg);
+    }
+  }
+  
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+.row3{
+    background: var(--primary);
+    padding-bottom: 40px;
+}
+
+.col3{
+    padding-left: 200px !important;
+    color: white;
+}
+
+.col3-1{
+    padding-left: 200px !important;
+    display: flex;
+    color: white;
+}
+
+.col3-2{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    display: flex;
+    color: white;
+}
+
+.text3{
+    padding: 20px;
+}
+
+.text4{
+    padding-left: 200px;
+    padding-top: 40px;
+    padding-right: 30px;
+    margin-right: 40px;
+}
+
+.col4-2 img{
+  width: 260px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.row5{
+    background: var(--primary);
+    color: white;
+}
+
+.col5-1{
+    padding-left: 200px !important;
+}
+
+
+
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+}
+
+.slick-prev{
+  display: flex;
+  margin-left: -65px;
+  position: absolute;
+  background: transparent;
+  border: 0px solid transparent;
+  padding-top: 165px;
+  color: transparent;
+}
+
+.slick-next{
+  display: flex;
+  padding-top: 170px;
+  padding-right: 25px;
+  margin-top: -210px;
+  margin-left: 1380px;
+  position: absolute;
+  background: transparent url(../img/flecha-correcta.png);
+  border: 0px solid transparent;
+  color: transparent;
+}
+
+.multiple-items{
+  margin-left: 70px;
+  margin-right: 50px;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+@keyframes slide{
+  0% {margin-left: 10%;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -90%;}
+  45% {margin-left: -90%;}
+
+  50% {margin-left: -190%;}
+  70% {margin-left: -190%;}
+
+  75% {margin-left: -290%;}
+  100% {margin-left: -290%;}
+}
+.multiple-items img{
+  width: 300px;
+  height: 200px;
+}
+
+.multiple-items p{
+
+  padding-top: 30px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 88px;
+}
+
+.multiple-items h2{
+  color: white;
+  padding-left: 10px;
+  padding-right: 88px;
+}
+
+.foot{
+  padding-top: 40px;
+  height: 310px;
+  background: #35A29F;
+  justify-content: center;
+}
+
+.foot ul{
+  
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.foot ul li a img{
+  width: 130px;
+  height: 130px;
+}
+
+.foot ul li{
+  display: grid;
+  text-align: center;
+}
+
+.foot p{
+  color: black;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+/* --------------------------------------------------------------------- */
+
+@media screen and (max-width:435px) {
+
+  
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+  .linea{
+    display: none;
+    z-index: -99;
+    /* position: relative; */
+    padding-top: 200px;
+    width: 100%;
+}
+
+ .inicio-top #perfil1{
+  padding-bottom: 0;
+  padding-top: 70px;
+  width: 200px;
+  height: 250px;
+  margin-left: 0;
+}
+
+.row .inicio-top{
+  position: relative;
+  padding-left: 30px;
+  background: rgba(255, 255, 255, 0);
+}
+
+/* ----------------- perfil ----------------------------------- */
+
+.col1 {
+  padding-top: 30px;
+  padding-left: 30px !important;
+  padding-bottom: 0px !important;
+  width: 50%;
+  background: var(--primary);
+}
+.col2{
+  padding-top: 30px;
+  padding-left: 30px !important;
+  padding-bottom: 10px !important;
+  width: 50%;
+  background: var(--primary);
+}
+.col1 h3{
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.col1 h2{
+
+  font-size: 30px;
+  color: white;
+}
+
+.col1 p{
+  padding-top: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+.col2 img{
+
+  margin-top: 10px;
+  /* margin-left: 10px; */
+}
+
+.col2 img{
+  border-radius: 20px;
+  width: 400px;
+  height: 30vh;
+  margin-bottom: 30px;
+}
+
+.col-md-12 .text{
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+/* ----------------- habilidades ----------------------------------- */
+
+
+.all{
+  justify-content: center;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.circle-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 160px);
+  grid-gap: 80px;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  background: #d9d7da;
+  border-radius: 50%;
+}
+
+.circle-wrap .ht{
+  padding-top: 20px;
+}
+
+.circle-wrap .ph{
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.circle-wrap .js{
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--primary);
+  line-height: 80px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+.mask .fill-1 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: var(--primary);
+}
+
+.mask.full-1,
+.circle .fill-1 {
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(110deg);
+}
+
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(113deg);
+  }
+}
+
+/* 2nd bar */
+
+.mask .fill-2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color:var(--primary);
+}
+
+.mask.full-2,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(70deg);
+}
+
+@keyframes fill-2{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(70deg);
+  }
+}
+
+/* 3rd progress bar */
+.mask .fill-3 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color:var(--primary);
+}
+
+.mask.full-3,
+.circle .fill-3 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(40deg);
+}
+
+@keyframes fill-3{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+/* ------------------------- proyectos ----------------------------------- */
+
+
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+}
+
+
+
+.multiple-items{
+  margin-left: 0px;
+  margin-right: 0px;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+.multiple-items .item{
+  padding-right: 90px;
+}
+
+@keyframes slide{
+  0% {margin-left: 10%;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -90%;}
+  45% {margin-left: -90%;}
+
+  50% {margin-left: -190%;}
+  70% {margin-left: -190%;}
+
+  75% {margin-left: -290%;}
+  100% {margin-left: -290%;}
+}
+.multiple-items img{
+  width: 190px;
+  height: 200px;
+}
+
+.multiple-items a{
+  padding-right: 30px;
+}
+
+.multiple-items p{
+  display: none;
+  padding-top: 220px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.multiple-items h2{
+  color: white;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.text4{
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-right: 30px;
+  margin-right: 0px;
+}
+
+.col4-2{
+  margin-left: 45px;
+}
+
+.col4-2 img{
+    width: 160px;
+    margin-left: 0px;
+    padding-bottom: 20px;
+}
+
+.col5-1{
+  padding-left: 20px !important;
+}
+
+
+.foot{
+  padding-top: 40px;
+  height: 310px;
+  background: #35A29F;
+  justify-content: center;
+}
+
+.foot ul{
+  
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.foot ul li a img{
+  width: 50px;
+  height: 50px;
+}
+
+.foot ul li{
+  display: grid;
+  text-align: none;
+}
+
+.foot p{
+  color: black;
+  text-align: none;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+}
